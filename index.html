@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karakan Production</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins,sans-serif;
+}
+
+body{
+  background:#0b0b0b;
+  color:#fff;
+}
+
+/* SMOOTH SCROLL */
+html{
+  scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+header{
+  position:fixed;
+  top:0;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 80px;
+  background:rgba(0,0,0,0.5);
+  backdrop-filter:blur(12px);
+  z-index:1000;
+}
+
+.logo{height:45px;}
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  margin-left:20px;
+  font-size:14px;
+  opacity:0.8;
+}
+
+nav a:hover{
+  color:#ff2d2d;
+  opacity:1;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:radial-gradient(circle,#1a1a1a,#0b0b0b);
+  padding:20px;
+}
+
+.hero h1{font-size:55px;}
+.hero p{opacity:0.7;max-width:600px;margin-top:10px;}
+
+.btn{
+  margin-top:25px;
+  padding:12px 25px;
+  background:#ff2d2d;
+  border:none;
+  border-radius:30px;
+  color:white;
+  cursor:pointer;
+}
+
+/* SECTIONS */
+section{
+  padding:90px 80px;
+}
+
+h2{
+  margin-bottom:30px;
+  font-size:30px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+/* CARDS */
+.card{
+  background:#1a1a1a;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+}
+
+.card img{
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+/* CONTACT BOX */
+.contact-box{
+  text-align:center;
+  background:#111;
+  padding:60px;
+  border-radius:20px;
+}
+
+.contact-box button{
+  margin-top:20px;
+  padding:12px 25px;
+  background:#ff2d2d;
+  border:none;
+  color:#fff;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+/* 🔥 FOOTER */
+.social-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 80px;
+  margin-top:60px;
+
+  /* 🔥 KATMANLI KIRMIZI SİNEMATİK GRADIENT */
+  background: linear-gradient(
+    90deg,
+    #2b0000 0%,
+    #7a0b0b 40%,
+    #3b0000 70%,
+    #000000 100%
+  );
+
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.footer-logo{
+  height:50px;
+  opacity:0.8;
+}
+
+.footer-right{
+  display:flex;
+  gap:25px;
+  flex-wrap:wrap;
+}
+
+.footer-right a{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:white;
+  text-decoration:none;
+  font-size:13px;
+  opacity:0.8;
+  transition:0.3s;
+}
+
+.footer-right a:hover{
+  opacity:1;
+  color:#ff2d2d;
+}
+
+.icon{
+  width:18px;
+  height:18px;
+  object-fit:contain;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  header{padding:15px 20px;}
+  section{padding:60px 20px;}
+  .hero h1{font-size:36px;}
+
+  .social-footer{
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <img src="images/logo.png" class="logo">
+
+  <nav>
+    <a href="#about">Hakkımızda</a>
+    <a href="#projects">Projeler</a>
+    <a href="#actors">Oyuncular</a>
+    <a href="contact.html">İletişim</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Karakan Production</h1>
+  <p>Dizi ve film dünyasında yeni nesil hikaye anlatımı.</p>
+  <button class="btn">Showreel</button>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>Hakkımızda</h2>
+  <p>Genç yetenekleri destekleyen modern bir prodüksiyon ekibiyiz.</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projeler</h2>
+  <div class="grid">
+    <div class="card">Çok Yakında</div>
+    <div class="card">Çok Yakında</div>
+    <div class="card">Çok Yakında</div>
+  </div>
+</section>
+
+<!-- ACTORS -->
+<section id="actors">
+  <h2>Oyuncularımız</h2>
+  <div class="grid">
+
+    <div class="card">
+      <img src="images/foto1.jpeg">
+      <p>Kaan ÇATALKAYA</p>
+    </div>
+
+    <div class="card">
+      <img src="images/foto2.jpeg">
+      <p>Oyuncu 2</p>
+    </div>
+
+    <div class="card">
+      <img src="images/foto3.jpeg">
+      <p>Yunus Emre</p>
+    </div>
+
+    <div class="card">
+      <img src="images/foto4.jpeg">
+      <p>Okan HAYIR</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <div class="contact-box">
+    <h2>Bizimle Çalış</h2>
+    <p>Projeler için iletişime geç.</p>
+
+    <button onclick="window.location.href='contact.html'">
+      İletişime Geç
+    </button>
+  </div>
+</section>
+
+<!-- 🔥 FOOTER -->
+<footer class="social-footer">
+
+  <div>
+    <img src="images/logo.png" class="footer-logo">
+  </div>
+
+  <div class="footer-right">
+
+    <a href="https://facebook.com" target="_blank">
+      <img src="images/facebook.png" class="icon"> Facebook
+    </a>
+
+    <a href="https://instagram.com" target="_blank">
+      <img src="images/instagram.png" class="icon"> Instagram
+    </a>
+
+    <a href="https://x.com" target="_blank">
+      <img src="images/x.png" class="icon"> X
+    </a>
+
+    <a href="https://youtube.com" target="_blank">
+      <img src="images/youtube.png" class="icon"> YouTube
+    </a>
+
+  </div>
+
+</footer>
+
+</body>
+</html>

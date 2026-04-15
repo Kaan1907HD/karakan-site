@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>İletişim - Karakan Production</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Poppins,sans-serif;
+}
+
+body{
+  background:#0b0b0b;
+  color:#fff;
+
+  /* 🔥 FOOTER FIX */
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+/* HEADER */
+header{
+  padding:20px 80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(0,0,0,0.5);
+  backdrop-filter:blur(10px);
+}
+
+header a{
+  color:#fff;
+  text-decoration:none;
+  font-size:14px;
+  opacity:0.8;
+}
+
+/* CONTENT */
+.container{
+  display:flex;
+  gap:60px;
+  padding:80px;
+
+  /* 🔥 FOOTER ITMESİN DİYE */
+  flex:1;
+}
+
+/* FORM */
+.form{
+  flex:1;
+}
+
+.form h1{
+  color:#ff2d2d;
+  margin-bottom:20px;
+}
+
+input, textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:15px;
+  background:#1a1a1a;
+  border:none;
+  color:#fff;
+  border-radius:8px;
+}
+
+button{
+  width:100%;
+  padding:12px;
+  background:#ff2d2d;
+  border:none;
+  color:#fff;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* INFO */
+.info{
+  flex:1;
+}
+
+.info h2{
+  color:#ff2d2d;
+  margin-bottom:10px;
+}
+
+.info p{
+  opacity:0.8;
+  line-height:1.6;
+  margin-bottom:15px;
+}
+
+/* FOOTER (DAİMA ALTTA) */
+footer{
+  padding:20px 80px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#0b0b0b;
+  border-top:1px solid #1f1f1f;
+}
+
+/* LOGO */
+.footer-logo img{
+  height:40px;
+}
+
+/* SOCIAL */
+.social{
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+
+.social a{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  text-decoration:none;
+  color:#fff;
+  font-size:13px;
+  opacity:0.8;
+  transition:0.3s;
+}
+
+.social a:hover{
+  opacity:1;
+  color:#ff2d2d;
+}
+
+.social img{
+  width:18px;
+  height:18px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .container{
+    flex-direction:column;
+    padding:30px;
+  }
+
+  footer{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html">← Ana Sayfa</a>
+</header>
+
+<div class="container">
+
+  <div class="form">
+    <h1>İletişim</h1>
+
+    <input type="text" placeholder="Ad Soyad">
+    <input type="email" placeholder="E-posta">
+    <textarea rows="6" placeholder="Mesajınız"></textarea>
+
+    <button>Gönder</button>
+  </div>
+
+  <div class="info">
+    <h2>Karakan Production</h2>
+
+    <p>
+      Modern prodüksiyon ajansı. Genç yeteneklerle dizi ve film üretimi.
+    </p>
+
+    <p><b>Adres:</b><br>Balmumcu / İstanbul</p>
+    <p><b>Email:</b><br>info@karakan.com</p>
+    <p><b>Telefon:</b><br>+90 000 000 00</p>
+
+  </div>
+
+</div>
+
+<!-- FOOTER (DAİMA ALTTA) -->
+<footer>
+
+  <div class="footer-logo">
+    <img src="images/logo.png">
+  </div>
+
+  <div class="social">
+    <a href="#"><img src="images/instagram.png">Instagram</a>
+    <a href="#"><img src="images/x.png">X</a>
+    <a href="#"><img src="images/facebook.png">Facebook</a>
+    <a href="#"><img src="images/youtube.png">YouTube</a>
+  </div>
+
+</footer>
+
+</body>
+</html>
